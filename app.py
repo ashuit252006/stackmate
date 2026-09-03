@@ -38,7 +38,7 @@ def chat():
 
     try:
         response = client.models.generate_content(
-            model="gemini-3.5-flash",
+            model="gemini-3.6-flash",
             contents=SYSTEM_PROMPT + "\n\nUser question:\n" + message
         )
         return jsonify({"reply": response.text})
